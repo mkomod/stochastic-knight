@@ -1,7 +1,7 @@
 
 A solution to a randomly moving Knight via MCMC
 
-!(simulated)[]
+![knight.jpg](https://github.com/mkomod/stochastic-knight/blob/master/knight.jpg)
 
 The theoretical solution is
 
