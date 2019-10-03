@@ -3,6 +3,8 @@ A solution to a randomly moving Knight via MCMC
 
 The theoretical solution is
 
+![theoretical.jpg](https://github.com/mkomod/stochastic-knight/blob/master/theoretical.jpg)
+
 Dark blue: 42
 
 Medium blue: 56
