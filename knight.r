@@ -45,12 +45,13 @@ for(i in 1:NUM_TRIALS) {
 	COUNTER <- COUNTER + 1
 	current_pos <- make_move(current_pos)
     }
-    COUNTER <- COUNTER + 1
     num.moves <- append(num.moves, COUNTER)
     avg.moves <- append(avg.moves, sum(num.moves)/i)
     COUNTER <- 0 
 }
 
 mean(num.moves)
-plot(avg.moves, ylim=c(80,150))
 
+jpeg("knight.jpg", height=480, width=480)
+plot(avg.moves, ylim=c(80, 150), t="l", xlab="Simulation", ylab="Avg. Number of Moves")
+dev.off()
