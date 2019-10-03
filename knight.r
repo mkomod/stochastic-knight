@@ -53,5 +53,5 @@ for(i in 1:NUM_TRIALS) {
 mean(num.moves)
 
 jpeg("knight.jpg", height=480, width=480)
-plot(avg.moves, ylim=c(80, 150), t="l", xlab="Simulation", ylab="Avg. Number of Moves")
+plot(avg.moves, ylim=c(80, 150), t="p", xlab="Simulation", ylab="Avg. Number of Moves")
 dev.off()
