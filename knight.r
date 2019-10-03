@@ -36,22 +36,24 @@ make_move <- function(pos) {
 num.moves <- c()
 avg.moves <- c()
 
+set.seed(1)
+
 for(i in 1:NUM_TRIALS) {
     current_pos <- make_move(INIT_POS)
     COUNTER <- COUNTER + 1
     while(! (current_pos[1,1] == INIT_POS[1,1] && 
 	    current_pos[2,1] == INIT_POS[2,1])) 
     { 
-	COUNTER <- COUNTER + 1
 	current_pos <- make_move(current_pos)
+	COUNTER <- COUNTER + 1
     }
     num.moves <- append(num.moves, COUNTER)
     avg.moves <- append(avg.moves, sum(num.moves)/i)
-    COUNTER <- 0 
+    COUNTER <- 0
 }
 
 mean(num.moves)
-
-jpeg("knight.jpg", height=480, width=480)
-plot(avg.moves, ylim=c(80, 150), t="p", xlab="Simulation", ylab="Avg. Number of Moves")
+jpeg("knight.jpg", height=480, width=500)
+plot(avg.moves, ylim=c(80, 150), xlim=c(0, NUM_TRIALS), t="s", xlab="Simulation", ylab="Avg. Number of Moves")
 dev.off()
+
