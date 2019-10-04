@@ -7,16 +7,11 @@ The estimate mean number of moves from 10 000 simulations is 114, note that on o
 
 The theoretical solution is
 
+ - Dark blue: 42
+ - Medium blue: 56
+ - Light blue: 84
+ - Yellow: 112
+ - Red: 168
+
 ![theoretical.jpg](https://github.com/mkomod/stochastic-knight/blob/master/theoretical.jpg)
-
-Dark blue: 42
-
-Medium blue: 56
-
-Light blue: 84
-
-Yellow: 112
-
-Red: 168
-
 
