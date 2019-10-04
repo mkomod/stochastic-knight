@@ -36,7 +36,7 @@ make_move <- function(pos) {
 num.moves <- c()
 avg.moves <- c()
 
-set.seed(1)
+set.seed(42)
 
 for(i in 1:NUM_TRIALS) {
     current_pos <- make_move(INIT_POS)
@@ -54,6 +54,6 @@ for(i in 1:NUM_TRIALS) {
 
 mean(num.moves)
 jpeg("knight.jpg", height=480, width=500)
-plot(avg.moves, ylim=c(80, 150), xlim=c(0, NUM_TRIALS), t="s", xlab="Simulation", ylab="Avg. Number of Moves")
+plot(avg.moves, ylim=c(80, 150), xlim=c(0, NUM_TRIALS), t="", xlab="Simulation", ylab="Avg. Number of Moves")
 dev.off()
 
