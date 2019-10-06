@@ -9,8 +9,7 @@ NUM_TRIALS <- 10000
 
 
 make_move <- function(pos) {
-    # Given a predefined set of moves, takes a position matrix and makes a
-    # random legal valid move
+    # Takes current position and makes a random valid move
     #
     # Args:
     #  pos: (matrix) the current position
